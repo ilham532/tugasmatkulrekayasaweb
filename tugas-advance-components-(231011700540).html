@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Components Example</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Advanced Components</h1>
+
+    <!-- Modal Dialog -->
+    <section>
+        <h2>Modal Dialog</h2>
+        <button id="openModal">Open Modal</button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>This is a modal window</h3>
+                <p>Modal content goes here.</p>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- Carousel (Slideshow) -->
+    <section>
+        <h2>Image Carousel</h2>
+        <div class="carousel">
+            <div class="slides">
+                <img src="https://via.placeholder.com/600x300?text=Slide+1" alt="Slide 1">
+                <img src="https://via.placeholder.com/600x300?text=Slide+2" alt="Slide 2">
+                <img src="https://via.placeholder.com/600x300?text=Slide+3" alt="Slide 3">
+            </div>
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- Accordion -->
+    <section>
+        <h2>Accordion</h2>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Content for section 1.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Content for section 2.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Content for section 3.</p>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- Tooltip -->
+    <section>
+        <h2>Tooltip</h2>
+        <p>Hover over the text below to see the tooltip:</p>
+        <span class="tooltip">Hover over me!
+            <span class="tooltiptext">Tooltip message</span>
+        </span>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

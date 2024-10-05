@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi dengan Validasi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Form Registrasi</h1>
+
+    <!-- Form Registrasi -->
+    <form id="registrationForm" action="#" method="POST" onsubmit="return validateForm()">
+        <!-- Input Nama -->
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+        <span id="nameError" class="error"></span>
+        <br><br>
+
+        <!-- Input Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+        <span id="emailError" class="error"></span>
+        <br><br>
+
+        <!-- Input Kata Sandi -->
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required minlength="8">
+        <span id="passwordError" class="error"></span>
+        <br><br>
+
+        <!-- Input Konfirmasi Kata Sandi -->
+        <label for="confirmPassword">Konfirmasi Kata Sandi:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Konfirmasi kata sandi" required>
+        <span id="confirmPasswordError" class="error"></span>
+        <br><br>
+
+        <!-- Tombol Submit -->
+        <input type="submit" value="Daftar">
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
